@@ -1,3 +1,4 @@
+'use strict';
 /**
  * StatTracker is a generic stats tracker library that can be used with any backend.
  *
@@ -106,11 +107,11 @@ Profiler.prototype._kill = function() {
 function StatTracker(config) {
   try {
     this._config = config;
-    this._backend = new (config.backend)(this.backend_config);
+    this._backend = (typeof config.backend === 'object') ? config.backend : new (config.backend)(this.backend_config);
     this._prefix = config.prefix.length ? config.prefix + config.separator : '';
     this._tags = config.global_tags;
   } catch (ex) {
-    throw new Error('Failed to start stat tracker.', ex);
+    throw new Error('Failed to start stat tracker.' + ex);
   }
 }
 
