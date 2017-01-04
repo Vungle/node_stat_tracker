@@ -1,0 +1,20 @@
+{
+  "name": "node_stat_tracker",
+  "version": "0.1.0",
+  "description": "A generic stat tracker",
+  "private": true,
+  "engines": {
+    "node": ">= 6.7.0"
+  },
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "lint": "jshint --exclude node_modules .",
+    "start": "node index.js",
+    "test": "mocha --bail --recursive test"
+  },
+  "author": "Vungle AdServing"
+}
