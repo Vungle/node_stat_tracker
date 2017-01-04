@@ -44,10 +44,11 @@
 
 // Default configuration object
 const DEFAULT_CONFIG = {
+  backend: null,
+  backend_config: {},
   global_tags: [],
   prefix: '',
-  separator: '.',
-  backend: null
+  separator: '.'
 };
 
 /**
@@ -105,7 +106,7 @@ Profiler.prototype._kill = function() {
 function StatTracker(config) {
   try {
     this._config = config;
-    this._backend = new (config.backend)(config);
+    this._backend = new (config.backend)(this.backend_config);
     this._prefix = config.prefix.length ? config.prefix + config.separator : '';
     this._tags = config.global_tags;
   } catch (ex) {
