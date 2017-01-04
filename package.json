@@ -10,10 +10,11 @@
   "dependencies": {
   },
   "devDependencies": {
+    "jshint": "2.9.3",
+    "mocha": "3.1.2"
   },
   "scripts": {
     "lint": "jshint --exclude node_modules .",
-    "start": "node index.js",
     "test": "mocha --bail --recursive test"
   },
   "author": "Vungle AdServing"
