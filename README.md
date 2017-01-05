@@ -34,7 +34,7 @@ so that other Vungle NodeJS projects can use it.
     var profiler = statTracker.profiler('profile_scope');
 
     ... Some computation ...
-    statTracker.count('step1_num_runs', 1);
+    statTracker.count('step1_num_runs', 1, ["sometag"]);
 
     profiler.tick('first_step');
 
@@ -51,9 +51,9 @@ A backend is a JavaScript prototype that implements the following:
 ```javascript
 function Backend(config) {}
 
-Backend.prototype.count = function(metric, value) {};
-Backend.prototype.time = function(metric, value) {};
-Backend.prototype.gauge = function(metric, value) {};
+Backend.prototype.count = function(metric, value, tags) {};
+Backend.prototype.time = function(metric, value, tags) {};
+Backend.prototype.gauge = function(metric, value, tags) {};
 
 module.exports = Backend;
 ```
