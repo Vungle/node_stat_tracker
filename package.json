@@ -1,6 +1,6 @@
 {
   "name": "node_stat_tracker",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A generic stat tracker",
   "private": true,
   "engines": {
