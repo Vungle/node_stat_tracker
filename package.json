@@ -1,14 +1,13 @@
 {
   "name": "node_stat_tracker",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A generic stat tracker",
   "private": true,
   "engines": {
     "node": ">= 6.7.0"
   },
   "main": "index.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "jshint": "2.9.3",
     "mocha": "3.1.2",
