@@ -7,7 +7,9 @@
     "node": ">= 6.7.0"
   },
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "hot-shots": "4.3.1"
+  },
   "devDependencies": {
     "jshint": "2.9.3",
     "mocha": "3.1.2",
