@@ -1,18 +1,19 @@
-var StatsDBackend = require('../lib/statsd_backend');
-var StatTracker = new require('../')({
+var StatTracker = require('../')
+var StatsDBackend = StatTracker.StatsDBackend;
+var tracker = new StatTracker.StatTracker({
   global_tags: ["tag1", "tag2"],
   prefix: 'stat_tracker_test',
   backend: StatsDBackend
 });
 
-var profiler = StatTracker.profiler('counts', ["extra_tag1"]);
+var profiler = tracker.profiler('counts', ["extra_tag1"]);
 
-StatTracker.count('my_count', 1);
+tracker.count('my_count', 1);
 
 profiler.tick('first_count');
 
-StatTracker.count('my_second_count', 10);
-StatTracker.count('my_second_count', -5, ["extra_tag2"]);
+tracker.count('my_second_count', 10);
+tracker.count('my_second_count', -5, ["extra_tag2"]);
 
 profiler.end();
 
@@ -20,3 +21,5 @@ profiler.end();
 setTimeout(function() {
   process.exit(0);
 }, 100);
+
+
