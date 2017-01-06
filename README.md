@@ -29,17 +29,17 @@ so that other Vungle NodeJS projects can use it.
 
   }
 
-  var statTracker = new StatTracker({});
+  var tracker = new StatTracker.Tracker({});
   function track_this() {
-    var profiler = statTracker.profiler('profile_scope');
+    var profiler = tracker.profiler('profile_scope');
 
     ... Some computation ...
-    statTracker.count('step1_num_runs', 1, ["sometag"]);
+    tracker.count('step1_num_runs', 1, ["sometag"]);
 
     profiler.tick('first_step');
 
     ... Some computation ...
-    statTracker.count('step2_num_runs', 1);
+    tracker.count('step2_num_runs', 1);
 
     profiler.end();
   }
