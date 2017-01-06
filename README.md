@@ -1,9 +1,10 @@
-# Node Stat Tracker
-NodeJS generic stat tracker.
+[![Build Status](https://travis-ci.com/Vungle/node_stat_tracker.svg?token=zokj87uTuruMNu9yXXRH&branch=master)](https://travis-ci.com/Vungle/node_stat_tracker)
 
-This is an improvement to the version already implemented in
-the legacy adserver code. We are pulling it out
-so that other Vungle NodeJS projects can use it.
+# Node Stat Tracker
+A generic stat tracker for NodeJS that can support many instances and different
+reporting backends.
+
+Tested for NodeJS: 4+
 
 # Usage
 
