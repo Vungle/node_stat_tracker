@@ -2,7 +2,7 @@
   "name": "node_stat_tracker",
   "version": "0.4.0",
   "description": "A generic stat tracker",
-  "private": true,
+  "private": false,
   "engines": {
     "node": ">= 6.7.0"
   },
