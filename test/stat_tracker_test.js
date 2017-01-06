@@ -27,7 +27,7 @@ var dummyBackend = {
   }
 };
 
-var statTracker = new require('../')({
+var statTracker = new (require('../').Tracker)({
   backend: dummyBackend
 });
 
