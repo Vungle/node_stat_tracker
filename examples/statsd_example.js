@@ -1,6 +1,6 @@
 var StatTracker = require('../')
 var StatsDBackend = StatTracker.StatsDBackend;
-var tracker = new StatTracker.StatTracker({
+var tracker = new StatTracker.Tracker({
   global_tags: ["tag1", "tag2"],
   prefix: 'stat_tracker_test',
   backend: StatsDBackend
