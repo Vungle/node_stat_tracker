@@ -1,10 +1,16 @@
 {
+  "author": "Vungle AdServing",
   "name": "node_stat_tracker",
+  "homepage": "https://vungle.com/",
   "version": "0.4.1",
   "description": "A generic stat tracker",
   "private": false,
   "engines": {
     "node": ">= 6.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Vungle/node_stat_tracker.git"
   },
   "main": "index.js",
   "dependencies": {
@@ -20,5 +26,5 @@
     "lint": "jshint --exclude node_modules .",
     "test": "mocha --bail --recursive test"
   },
-  "author": "Vungle AdServing"
+  "license": "MIT"
 }
