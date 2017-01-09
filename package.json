@@ -2,7 +2,7 @@
   "author": "Vungle AdServing",
   "name": "node_stat_tracker",
   "homepage": "https://vungle.com/",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "A generic stat tracker",
   "keywords": [
     "stats",
