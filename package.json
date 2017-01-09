@@ -4,6 +4,12 @@
   "homepage": "https://vungle.com/",
   "version": "0.4.2",
   "description": "A generic stat tracker",
+  "keywords": [
+    "stats",
+    "statsd",
+    "datadog",
+    "stat tracker"
+  ],
   "private": false,
   "engines": {
     "node": ">= 6.7.0"
@@ -18,8 +24,8 @@
   },
   "devDependencies": {
     "jshint": "2.9.3",
-    "mocha": "3.1.2",
-    "should": "11.1.1",
+    "mocha": "3.2.0",
+    "should": "11.1.2",
     "async": "2.1.4"
   },
   "scripts": {
